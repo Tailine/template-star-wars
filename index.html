@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Star Wars</title>
+</head>
+<body>
+  <!------------------------ NAVEGACAO ----------------------->
+  <header>
+    <div class="navegation-container"> <!-- NAO EXISTIA -->
+      <img src="imagens/yellow-logo.png" alt="Star Wars logo" class="logo"> 
+      <nav class="desktop-navegation">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <!-- Hamburguer menu -->
+        <div class="hamburguer">
+          <span class="linha"></span>
+          <span class="linha"></span>
+          <span class="linha"></span>
+        </div>   
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav> 
+    </div>       
+  </header>
+
+  
+  <!------------------------ BANNER ----------------------->
+  <section id="banner">
+    <div class="container">
+      <h1 class="title">The Last Jedi</h1>
+      <p class="subtitle">Lorem ipsum dolor sit amet, cum ne omnes delectus. An pro mutat tractatos, eu quo debitis intellegam.</p>
+      <button class="btn">Assista agora</button>
+      <a class="arrow"><i class="fas fa-angle-down"></i></a>
+    </div>
+  </section>
+
+  
+ 
+  <!------------------------ SOBRE ----------------------->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre o filme</h2>
+      <div class="sobre-content">
+        <div class="sobre-img" >
+          <img src="imagens/objeto-banner-star-wars.png" alt="">
+        </div>
+        <div class="sobre-text">
+          <p>Lorem ipsum dolor sit amet, cum ne omnes delectus. An pro mutat tractatos, eu quo debitis intellegam. Vis nulla epicurei ad, his animal mediocritatem et. Mei te periculis percipitur interpretaris, eu partem putant eos, ut fierent singulis ius. Ei per stet intellegat consectetuer. Lorem ipsum dolor sit amet, cum ne omnes delectus. An pro mutat tractatos, eu quo debitis intellegam. Vis nulla epicurei ad, his animal mediocritatem et. Mei te periculis percipitur interpretaris, eu partem putant eos, ut fierent singulis ius. Ei per stet intellegat consectetuer. Lorem ipsum dolor sit amet, cum ne omnes delectus. An pro mutat tractatos, eu quo debitis intellegam. Vis nulla epicurei ad, his animal mediocritatem et. Mei te periculis percipitur interpretaris, eu partem putant eos, ut fierent singulis ius. Ei per stet intellegat consectetuer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!------------------------ NOTICIAS ----------------------->
+  <section id="noticias">
+    <h2>Notícias</h2>
+    <div class="container">
+      <div class="card-grid">
+        <div class="card">
+          <img src="imagens/noticias.png" alt="">
+          <h4>Lorem ipsum dolor sit amet, cum ne omdelectus</h4>
+          <p>By: Karen Rocha</p>
+        </div>
+        
+        <div class="card">
+          <img src="imagens/noticias.png" alt="">
+          <h4>Lorem ipsum dolor sit amet, cum ne omdelectus</h4>
+          <p>By: Karen Rocha</p>
+        </div>
+
+        <div class="card">
+          <img src="imagens/noticias.png" alt="">
+          <h4>Lorem ipsum dolor sit amet, cum ne omdelectus</h4>
+          <p>By: Karen Rocha</p>
+        </div>
+      </div>
+      <!-- <div class="noticias-grid">
+        <figure class="noticias-item">
+          <img src="imagens/noticias.png" alt="">
+            <h4>Lorem ipsum dolor sit amet, cum ne omdelectus</h4>
+            <figcaption>By: Karen Rocha</figcaption>
+        </figure>
+    
+        <figure class="noticias-item">
+          <img src="imagens/noticias.png" alt="">
+          <h4>Lorem ipsum dolor sit amet, cum ne omdelectus</h4>
+          <figcaption>By: Karen Rocha</figcaption>
+        </figure>
+    
+        <figure class="noticias-item">
+          <img src="imagens/noticias.png" alt="">
+          <h4>Lorem ipsum dolor sit amet, cum ne omdelectus</h4>
+          <figcaption>By: Karen Rocha</figcaption>
+        </figure>
+      </div> -->
+    </div>
+  </section>
+
+  <!------------------------ CONTATO ----------------------->
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <div class="formulario-container">
+        <div class="empresa-contato">
+          <div class="empresa-info">
+            <i class="fas fa-map-marker-alt fa-sm"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="empresa-info">        
+            <i class="fas fa-envelope-open fa-sm"></i>
+            <p>contato@contato.com</p>
+          </div>
+          <div class="empresa-info">
+            <i class="fas fa-phone fa-sm"></i>
+            <p>9 9999-9999</p>
+          </div>      
+        </div>
+
+        <div class="formulario">
+          <form action="" id="form-contato">
+            <p>
+              <label for="">Nome:</label>
+              <input type="text" placeholder="nome" name="nome" required="required">
+            </p>
+            <p>
+              <label for="">Email:</label>
+              <input type="email" placeholder="email" name="email" required="required">
+            </p>
+            <p>
+              <label for="">Telefone:</label>
+              <input type="text" placeholder="telefone" name="telefone" maxlength="15" required="required"
+              pattern="/(\(2[0-9]\)[0-9]{4,5}-[0-9]{3,4}/">
+            </p>
+            <p>
+              <label for="">Mensagem:</label>
+              <textarea name="mensagem" placeholder="Escreva aqui uma mensagem" form="form-contato" cols="30" rows="8"></textarea>
+            </p>
+            <p id="form-btn">
+              <button id="btn-enviar">Enviar</button>
+            </p>
+          </form>
+        </div>
+
+        <div class="redes-sociais">
+          <h3>Nossa Redes</h3>
+          <i class="fab fa-facebook-f fa-sm"></i>
+          <i class="fab fa-twitter fa-sm"></i>
+          <i class="fab fa-instagram fa-sm"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------ FOOTER ----------------------->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-image">
+          <img src="imagens/black-logo.png" alt="Logo Star Wars">
+        </div>        
+        <div class="footer-copyright">
+          <p>&copy2018. All Rigths Reserved</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
