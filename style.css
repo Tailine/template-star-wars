@@ -294,7 +294,7 @@ banner
 
 @media(min-width: 900px) {
   #banner {
-    padding-left: 2em;
+    /* padding-left: 2em; */
     padding-top: 30vh;  
   }
 
@@ -486,7 +486,8 @@ contato
   font-weight: 600;
 }
 
-#contato input:focus {
+#contato input:focus,
+#contato textarea:focus {
   border: var(--yellow-color) 1px solid;
 }
 
@@ -521,6 +522,7 @@ textarea {
   padding: 1em;
   border-radius: 5px;
   width: 100%;
+  resize: none;
   border: none;
 }
 
