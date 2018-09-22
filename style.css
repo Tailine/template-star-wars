@@ -22,7 +22,7 @@
 
 @media(min-width: 900px) {
   .container {
-    padding: 2em 7em;
+    padding: 2em 7em 0 7em;
   }
 }
 
@@ -74,16 +74,14 @@ h2::after {
 }
 
 #noticias,
-#contato,
 #sobre {
-  padding-bottom: 2em;
+  padding: 2em 0;
 }
 
 /****************
 header
 ****************/
-/* header */
-.navegation-container { /* ERA HEADER */
+.navegation-container { 
   position: absolute;
   position: fixed;
   top: 0;
@@ -102,14 +100,9 @@ header
   padding: .7em 0;
 }
 
-/* header nav {
-  position: fixed;
-} */
-
 .logo {
   width: 100px;
   height: 50px;
-  /* position: fixed; */
 }
 
 ul {
@@ -147,7 +140,6 @@ ul li a {
 
 /* mobile menu */
 .mobile-menu, .mobile-menu ul { /* para que n fiquem duas navs */
-  /* position: relative; */
   display: none;
 }
 
@@ -204,10 +196,13 @@ ul li a {
 
   .mobile-menu li {
     display: block;
-    /* margin: 3.5em 0; */
     padding: 1.5em;
     width: 100%;
     border-top: .5px solid rgba(170, 170, 170, 0.486);
+  }
+  
+  .mobile-menu li:last-child {
+    border-bottom: .5px solid rgba(170, 170, 170, 0.486);
   }
 
   .mobile-menu ul li a {
@@ -233,13 +228,9 @@ banner
   height: 100vh;
   color: var(--white-color);
   padding: 11em 0;
-  /* padding-left: 10.7em;
-  padding-top: 40vh;  */
-  /* display: grid; */
 }
 
 .title {
-/*   align-self: end; */
   margin-bottom: .2em;
   text-align: center;
   font-size: 2.7rem;
@@ -248,8 +239,6 @@ banner
 }
 
 .subtitle {
-  /* align-self: start; */
-  /* width: 50%;  DESKTOP*/
   font-size: 1em;
   font-weight: 300;
   text-align: center;
@@ -260,7 +249,6 @@ banner
   margin: 2em auto 0;
   display: block;
   padding: 1em 2em;
-  /* width: 15em; */
   border-radius: 30px;
   background-color: transparent;
   color: var(--yellow-color);
@@ -306,7 +294,7 @@ banner
 
 @media(min-width: 900px) {
   #banner {
-    padding-left: 4em;
+    padding-left: 2em;
     padding-top: 30vh;  
   }
 
@@ -328,19 +316,11 @@ banner
   }
 }
 
-/* @media(min-width: 990px) {
-  #banner {
-    padding-left: 2em;
-    padding-top: 35vh;  
-  } */
-
-
 /****************
 sobre
 ****************/
 #sobre {
   padding-top: 1.5em;
-  /* background: #ffe224; */
 }
 
 .sobre-content {
@@ -349,13 +329,6 @@ sobre
 
 .sobre-content p {
   text-align: justify;
-}
-
-.sobre-text h2 {
-  /* position: absolute;
-  top: -.7em;
-  background: var(--white-color);
-  padding: 0 .25em; */
 }
 
 .sobre-img {
@@ -377,9 +350,6 @@ sobre
     padding-right: 1em;
     line-height: 1.5em;
   }
-  /* #sobre h2::after {
-    display: none;
-  } */
 }
 
 @media(min-width: 1136px) {
@@ -474,10 +444,6 @@ noticias
   .card img {
     width: auto;
   }
-
-  /* .card {
-    align-content: start;
-  } */
 }
 
 @media(min-width: 1024px) {
@@ -493,13 +459,14 @@ contato
   background-image: url('imagens/background_contato.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding: 2em; */
   color: var(--white-color);
+  padding-bottom: 3em;
 }
 
 #contato h2 {
   color: var(--yellow-color);
   font-size: 2rem;
+  padding-top: 2em;
 }
 
 #contato h2::after {
@@ -510,7 +477,6 @@ contato
   margin-top: .7em;
   border: none;
   padding: 1.5em 1em;
-  /* border: 1px solid black; */
   border-radius: 5px;
   width: 100%;
 }
@@ -593,7 +559,7 @@ textarea::placeholder {
   font-weight: 600;
   text-transform: uppercase;
   padding: 0 0 .5em;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 .redes-sociais i {
@@ -602,6 +568,10 @@ textarea::placeholder {
 
 .redes-sociais i:hover {
   color: var(--yellow-color);
+}
+
+.empresa-contato {
+  margin-bottom: 3em;
 }
 
 @media(min-width: 760px) {
@@ -622,15 +592,11 @@ textarea::placeholder {
 
 @media(min-width: 900px) {
 
-  /* #contato input {
-    padding: 1.5em 1em;
-  } */
-
   .formulario-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px;
-    grid-column-gap: 120px;
+    grid-column-gap: 170px;
   }
 
   .formulario {
@@ -643,7 +609,6 @@ textarea::placeholder {
   }
 
   .empresa-info {
-    /* margin-bottom: 2em; */
     margin-top: 1em;
     padding-top: 1em;
     align-content: flex-start;
@@ -676,11 +641,16 @@ footer img {
   width: auto;
 }
 
+.footer-copyright {
+  font-weight: bold;
+}
+
 /* DESKTOP */
 @media(min-width: 1000px) {
   .footer-content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding-bottom: 2em;
   }
   
   .footer-content .footer-image {

@@ -11,6 +11,7 @@ arrow.addEventListener('click', smothScroll);
 
 const destination = document.querySelector('#sobre').offsetTop;
 
+/* --------- mostra nav qnd scroll up --------- */
 let prevScrollPosition = window.pageYOffset;
 
 window.onscroll = function() {
@@ -29,31 +30,12 @@ window.onscroll = function() {
   }
 }
 
-/* window.onscroll = () => {    
-  const yOffset = window.pageYOffset;
-  if(yOffset < 610 && yOffset > 0) {
-    console.log("MENOR 610", yOffset);
-    desktopNav.style.opacity = 0;
-    /* desktopNav.style.display = 'none';  
-    desktopNav.classList.remove('scroll-nav');
-  } else if(yOffset >= 610) {
-    desktopNav.classList.add('scroll-nav');
-    /* desktopNav.style.display = 'flex'; 
-    desktopNav.style.opacity = 1;
-    console.log("ELSE IF", yOffset)
-  } else {
-    console.log("ELSE", yOffset);
-    /* desktopNav.style.display = 'flex'; 
-    desktopNav.style.opacity = 1;
-  } 
-}
- */
 
-/* smoth scroll */
+/* ----------- smoth scroll ----------- */
 let topDistance = 0;
 function smothScroll() {
   
-  const speed = 5;
+  const speed = 7;
   const scroll = setTimeout(() => {
     smothScroll();
   }, 1);
@@ -68,6 +50,7 @@ function smothScroll() {
   }  
 }
 
+/* --------- style desktop menu item clicado --------- */
 navItems.forEach(navItem => {
   navItem.addEventListener('click', styleNavItem);
 })
@@ -90,11 +73,11 @@ function adicionaActiveClass(evt) {
   evt.target.classList.add('active');
 } 
 
+/*---------- toggle mobile menu ----------*/
 mobileMenuNavItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMobileMenu);
 });
 
-/* toggle mobile menu */
 function toggleMobileMenu() {
   hamburguerMenu.classList.toggle('is-active');
   hamburguerMenu.classList.toggle('rotate');
